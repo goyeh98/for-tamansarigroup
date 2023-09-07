@@ -1,0 +1,337 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+$primary-color: #2d3c84;
+$primary-color-hover: darken(
+    $color: $primary-color,
+    $amount: 10%,
+);
+
+@mixin desktop-mode {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+/* Replace Primary Color: #2d3c84 */
+.text-primary {
+    color: $primary-color !important;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+
+.btn-primary:hover {
+    background-color: $primary-color-hover;
+    border-color: $primary-color-hover;
+}
+
+.bg-primary {
+    background-color: $primary-color !important;
+}
+
+.badge-primary {
+    background-color: $primary-color;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(
+        0deg,
+        $primary-color,
+        darken($color: $primary-color, $amount: 10%)
+    );
+}
+
+.heading-block {
+    h2 {
+        color: $primary-color;
+    }
+
+    &::after {
+        border-color: $primary-color;
+    }
+}
+
+.marquee {
+    width: 100%;
+    line-height: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.marquee p {
+    display: inline-block;
+    margin-bottom: 0;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+#top-bar {
+    #header-wrap {
+        position: fixed;
+        z-index: 299;
+        background-color: #025c94;
+    }
+
+    .marquee {
+        font-family: Poppins;
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase;
+        line-height: 20px;
+        color: #fff;
+        padding: 12px;
+    }
+}
+
+#header {
+    border: unset;
+
+    .menu-item > .menu-link,
+    .menu-item.current > .menu-link {
+        color: #fff;
+    }
+
+    .menu-link svg path {
+        fill: #fff;
+    }
+
+    @include desktop-mode {
+        .sub-menu-container .menu-item > .menu-link {
+            color: #666;
+        }
+
+        .menu-link svg path {
+            fill: #666;
+        }
+    }
+
+    .menu-item .sub-menu-trigger {
+        color: #fff;
+    }
+
+    .style-6 .menu-container > .menu-item.current > .menu-link::after {
+        border-top-color: #fff;
+    }
+
+    .svg-trigger path {
+        stroke: #fff;
+    }
+}
+
+.postcontent .post-timeline::before,
+.postcontent .post-timeline .entry-timeline,
+.post-timeline .entry-timeline .timeline-divider {
+    border-color: rgb(20, 94, 144);
+}
+
+.post-timeline .entry-timeline {
+    color: rgb(20, 94, 144);
+}
+
+.menu-link svg {
+    position: relative;
+    top: -1px;
+    font-size: 0.875rem;
+    width: 16px;
+    text-align: center;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.home {
+    p,
+    button {
+        font-family: Poppins;
+    }
+
+    #jumbotron {
+        background-image: url("../img/bg-jumbotron.png");
+        background-size: cover;
+        background-position-x: 75%;
+        height: calc(100vh - 226px);
+        padding-top: 100px;
+
+        @include desktop-mode {
+            background-position: center;
+            height: calc(100vh - 277px);
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 30px;
+        }
+
+        p {
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .btn {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        @include desktop-mode {
+            h1 {
+                font-size: 50px;
+            }
+
+            p {
+                font-size: 24px;
+            }
+
+            .btn {
+                padding: 0.5rem 1rem;
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    #icon-strength {
+        .row {
+            margin-top: -40px;
+        }
+
+        .icon {
+            background-color: #e3f2fc;
+            height: 90px;
+            width: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: #025c94;
+        }
+
+        .strength {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: Poppins;
+            margin-bottom: 8px;
+        }
+
+        .col-md-3:first-child .strength {
+            align-items: flex-end;
+        }
+
+        @include desktop-mode {
+            .row {
+                padding: 0 40px;
+                margin-bottom: 25px;
+            }
+
+            .strength {
+                align-items: flex-end;
+            }
+        }
+    }
+
+    #slidebar {
+        background-color: #e3f2fc;
+
+        .row {
+            height: 130px;
+        }
+
+        img {
+            width: unset;
+            display: unset;
+        }
+
+        p {
+            font-size: 12px;
+            color: #333;
+            margin-bottom: 0;
+        }
+
+        @include desktop-mode {
+            .row {
+                height: 300px;
+            }
+
+            img {
+                height: 300px;
+            }
+
+            p {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .heading-block::after {
+        width: 100px;
+    }
+
+    #why {
+        background-color: #025c94;
+
+        .heading-block {
+            h2 {
+                color: #fff;
+            }
+
+            &::after {
+                border-color: #fff;
+                width: 100px;
+            }
+        }
+    }
+
+    #testimoni {
+        background-color: #e3f2fc;
+
+        .heading-block {
+            h2 {
+                color: #333;
+            }
+
+            &::after {
+                border-color: #333;
+                width: 100px;
+            }
+        }
+    }
+}
+
+.about {
+    #section_1 {
+        p {
+            font-size: 1rem;
+
+            @include desktop-mode {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+#footer.dark {
+    background-color: #025c94;
+
+    #copyrights {
+        background-color: darken($color: #025c94, $amount: 20%);
+    }
+}
+
+/* Copyright &copy; Khidir Zahid Muchtadiabillah. All right Reserved. */

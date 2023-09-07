@@ -1,0 +1,40 @@
+.price-tabs {
+    background-color: #0c5d92;
+    -webkit-box-shadow: 0 5px 20px 0 rgba(39, 39, 39, 0.1);
+    box-shadow: 0 5px 20px 0 rgba(39, 39, 39, 0.1);
+    display: inline-block;
+    padding: 7px;
+    border-radius: 40px;
+    border: 1px solid #00b5ec;
+    margin-bottom: 45px;
+}
+
+@media (min-width: 768px) {
+    .price-tabs {
+        margin-bottom: 60px;
+    }
+}
+
+.price-tabs .nav-link {
+    color: #fff;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    padding: 12px 35px;
+    display: inline-block;
+    text-transform: capitalize;
+    border-radius: 40px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .price-tabs .nav-link {
+        padding: 12px 40px;
+    }
+}
+
+.price-tabs .nav-link.active {
+    background-color: #6a9fc1;
+    color: #fff;
+}

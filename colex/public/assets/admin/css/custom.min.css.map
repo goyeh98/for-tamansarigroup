@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,AAAA,UAAU,AAAC,CACX,aAAa,CAAE,QAAQ,CACvB,OAAO,CAAE,0BAA0B,CACnC,KAAK,CAAE,IAAI,CACd",
+    "sources": [
+        "../sass/custom.scss"
+    ],
+    "names": [],
+    "file": "custom.min.css"
+}
