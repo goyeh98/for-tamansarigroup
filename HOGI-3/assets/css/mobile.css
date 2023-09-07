@@ -1,0 +1,354 @@
+/* ALL */
+
+.button-regm {
+    border: 1px solid #cf8030;
+    margin-right: 10px;
+    color: #cf8030;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+.button-logm {
+    margin-right: 10px;
+    padding-left: 35%;
+    padding-right: 35%;
+    color: white;
+    background-color: #cf8030;
+}
+
+.button-learn {
+    background-color: #cf8030;
+    color: white;
+    border-radius: unset;
+}
+
+/* Font Color */
+
+.font-orange {
+    color: #cf8030;
+}
+
+.font-white {
+    color: white;
+}
+
+.font-black {
+    color: black;
+}
+
+/* Background Color */
+
+.silver-light {
+    background-color: #f0f1f1;
+}
+
+.silver-dark {
+    background-color: #414143;
+}
+
+.orange {
+    background-color: #cf8030;
+}
+
+.white {
+    background-color: white;
+}
+
+.cream {
+    background-color: #fff7ef;
+}
+
+/* ALL END */
+
+/* index */
+
+.ibr-5 {
+    border-radius: 5px;
+}
+
+/* Width & Height */
+
+.h-65 {
+    height: 65px;
+}
+
+/* Background */
+
+.bulet1 {
+    background-color: #fff7ef;
+    background-image: url(../img/bulet1.png);
+    background-repeat: no-repeat;
+}
+
+.bulet2 {
+    background-color: #fff7ef;
+    background-image: url(../img/bulet2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 45%;
+}
+
+.bulet3 {
+    background-color: #fff7ef;
+    background-image: url(../img/bulet3.png);
+    background-repeat: no-repeat;
+    background-size: 45%;
+}
+
+/* Margin & Padding */
+
+.imt-18 {
+    margin-top: 18px;
+}
+
+.imt-3 {
+    margin-top: -3px;
+}
+
+.iml-auto {
+    margin-left: auto;
+}
+
+.iml-25 {
+    margin-left: -25px;
+}
+
+.ipt-5 {
+    padding-top: 5%;
+}
+
+.ipt-7 {
+    padding-top: 7px;
+}
+
+.ipt-10 {
+    padding-top: 10%;
+}
+
+.mtop15 {
+    margin-top: 12%;
+}
+
+.fptop8 {
+    padding-top: 8%;
+}
+
+.fmleft7 {
+    color: white;
+    margin-left: 60%;
+}
+
+.fpbottom2 {
+    padding-bottom: 2rem;
+}
+
+/* font */
+/* .fpm {
+    font-size: 14px;
+} */
+
+/* br */
+.brm {
+    display: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 1400px) {
+    /* .pm {
+        font-size: 13px;
+    }
+    .fpm {
+        font-size: 11px;
+    } */
+    .mtop15 {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    /* .pm {
+        font-size: 11px;
+    }
+    .h1m {
+        font-size: 25px;
+    } */
+    .brm {
+        display: inherit;
+    }
+
+    .mtop15 {
+        margin-top: 5%;
+    }
+
+    /* .fpm {
+        font-size: 9px;
+    } */
+    .bulet1 {
+        background-image: none;
+    }
+
+    .bulet2 {
+        background-image: none;
+    }
+
+    .bulet3 {
+        background-image: none;
+    }
+
+    .fptop8 {
+        padding-top: 12%;
+    }
+
+    .fmb-2 {
+        margin-bottom: -2px;
+    }
+
+    .fpbottom2 {
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /* .pm {
+        font-size: 15px;
+    }
+    .h1m {
+        font-size: 2.5rem;
+    }
+    .fpm {
+        font-size: 15px;
+    } */
+    .fptop8 {
+        padding-top: 16%;
+    }
+
+    .fpbottom2 {
+        padding-bottom: 2rem;
+    }
+
+    .mtop992 {
+        margin-top: 59px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .fmleft7 {
+        color: white;
+        margin-left: 0;
+    }
+
+    .fpbottom2 {
+        padding-bottom: 2rem;
+    }
+}
+
+/* index end */
+
+/* product */
+
+@media screen and (max-width: 1400px) {
+    /* .npfsize {
+        font-size: 13px;
+    } */
+}
+
+@media screen and (max-width: 1200px) {
+    /* .npfsize {
+        font-size: 10px;
+    } */
+}
+
+@media screen and (max-width: 992px) {
+    /* .npfsize {
+        font-size: 16px;
+    } */
+}
+
+/* product end */
+
+/* news */
+
+/* news end */
+
+/* about */
+
+/* Width & Height */
+
+/* Margin & Padding */
+.apt15 {
+    background-color: #f5f5f5;
+    cursor: pointer;
+    padding-top: 15%;
+    height: 400px;
+}
+
+.apt5 {
+    padding-top: 50px;
+}
+
+.aml-min12 {
+    margin-left: -12px;
+}
+
+@media screen and (max-width: 1400px) {
+    .apt15 {
+        padding-top: 17%;
+    }
+
+    .h100m {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .apt5 {
+        padding-top: 20px;
+    }
+
+    .apt15 {
+        padding-top: 27%;
+    }
+
+    /* .ah1m {
+        font-size: 25px;
+    } */
+}
+
+@media screen and (max-width: 992px) {
+    /* .ah1m {
+        font-size: 2.5rem;
+    } */
+
+    .apt15 {
+        padding-top: 5%;
+    }
+
+    .aml-min12 {
+        margin-left: 0;
+    }
+
+    .ata-center {
+        text-align: -webkit-center;
+        text-align: -moz-center;
+    }
+
+    .apt-13 {
+        padding-top: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .h100m {
+        height: unset;
+    }
+}
+
+/* about end */
+
+/* faq */
+
+/* faq end */
+
+/* nama-produk */
+
+/* nama-produk end */
